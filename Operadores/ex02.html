@@ -6,10 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Operadores</title>
+    <style>
+        body {
+            background-color: rgba(194, 243, 121, 0.904);
+            font: normal 18pt;
+        }
+    </style>
 </head>
 
 <body>
-
+    <h1>DOM</h1>
+    <P>Aqui vai o resultado usando getelemtbytagname e no window usando p1 mais innertext</P>
+    <p>Aprendendo a usar <strong>DOM</strong> em javascript</p>
+    <div class="p2">Clique m min</div>
+    <h2>Selecionando de outra forma teste seletor</h2>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var p2 = window.document.getElementsByClassName('p2')
+        window.document.write(p1.innerText)
+        window.document.write(p2.namedItem)
+        var h = window.document.querySelector('h1')
+        window.document.write(h.innerHwrite(h.innerHTML)
+    </script>
 </body>
 
 </html>
