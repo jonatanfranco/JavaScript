@@ -22,16 +22,16 @@
     <h1>Somando Valores</h1>
     <input type="number" name="txtn1" id="txtn1">+ </input>
     <input type="number" name="txtn2" id="txtn2"> </input>
-    <input type="button" name="somar" id="somar()"> </input>
+    <input type="button" value="somar" onmouseenter="somar()"> </input>
     <div id="res">Resutado</div>
     <script>
         var tn1 = window.document.querySelector('txtn1')
         var tn2 = window.document.querySelector('input#txtn2')
-        var res = window.document.querySelector('res')
+        var res = window.document.getElementById('res')
         var n1 = Number(tn1.value)
         var n2 = Number(tn2.value)
         var s = n1 + n2
-        res.innerHTML.Number = 'A soma ${n1} e ${n2} é igual a ${s}'
+        res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
     </script>
 
 </body>
