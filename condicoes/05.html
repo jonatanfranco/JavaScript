@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <input type="text" name="txt" id="txt"> 
+    <input type="button" value="text" onclick="nacionalidade()">
+    <input type="checkbox">
+    <input type="password" name="senha" id="senha"> 
+    <input type="color" name="c" id="cor">   
+    <input type="date" name="d" id="da">
+    <input type="email" name="" id="">
+    <input type="submit" value="enviar">
+    <input type="image" src="04copiado3.html" alt="a">
+    <input type="search" name="f" id="s">
+    <input type="file" name="f" id="e">
+    <div id="n">oi</div>
+
+    <script>
+        function nacionalidade(){
+            var txt = window.document.getElementById('txt')
+            var na = window.document.getElementsByName('text')
+            var resu = Text(txt.Text)
+            console.log('<pc>Sua nacionalidade é <strong> ${resu}</strong></p>');
+            res.innerHTML = '<pc>Sua nacionalidade é <strong> ${resu}</strong></p>'
+            if(resu === brasil){
+                res.innerHTML = '<p>VocÊ é brasileiro</p>'
+            }else{
+            res.innerHTML = '<p>Você é estrangeiro</p>'
+            }
+        }
+    </script>
+
+
+</body>
+</html>
