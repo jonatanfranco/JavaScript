@@ -3,17 +3,20 @@ function carregar(){
     var img = window.document.getElementById('imagem')
     var data = new Date()
     var hora = data.getHours()
-    var minuto = data.getMinutes()
-    msg.innerHTML = `Agora são ${hora}:${minuto} horas.`
-
-    if (hora >= 0 && hora < 12){
-        // Bom Dia
-        img.src = 'manha2.jpg'
-    }else if (hora  >= 12 && < 18){
-       //Boa Tarde
-        img.src = 'tarde2.jpg'
+    //var hora = 10
+    msg.innerHTML = hora
+    
+    if(hora >= 0 && hora < 12){
+        //Boa Dia
+        img.scr ='imagens/manha2.jpg'
+        document.body.style.background = '#908d4d'
+    }else if (hora >= 12 && hora <= 18){
+        //Boa tarde
+        img.src = 'imagens/tarde2.jpg'
+        document.body.style.background = '#9b655c'
     }else{
-        // Boa Noite
-        img.src = 'noite2.jpg'
+        //Boa Noite
+        img.src = 'imagens/noite2.jpg'
+        document.body.style.background ='#632c1c'
     }
 }
