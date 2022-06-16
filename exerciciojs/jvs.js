@@ -4,7 +4,10 @@ function carregar(){
     var data = new Date()
     var hora = data.getHours()
     //var hora = 10
+
     msg.innerHTML = hora
+
+    // msg.innerHTML = ('Agora sao ${hora} hora')
     
     if(hora >= 0 && hora < 12){
         //Boa Dia
