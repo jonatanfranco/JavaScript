@@ -26,8 +26,8 @@
             var txt = window.document.getElementById('txt')
             var na = window.document.getElementsByName('text')
             var resu = Text(txt.Text)
-            console.log('<pc>Sua nacionalidade é <strong> ${resu}</strong></p>');
-            res.innerHTML = '<pc>Sua nacionalidade é <strong> ${resu}</strong></p>'
+            console.log(`{<pc>Sua nacionalidade é <strong> ${resu}</strong></p>`);
+            res.innerHTML = `<pc>Sua nacionalidade é <strong> ${resu}</strong></p>`
             if(resu === brasil){
                 res.innerHTML = '<p>VocÊ é brasileiro</p>'
             }else{
