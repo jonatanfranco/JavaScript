@@ -1,0 +1,17 @@
+main{
+    display: flex;
+    width: 100vw;
+    height: 100vw;
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    background-color: yellowgreen;
+    width: 400px;
+    height: 600px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+}
