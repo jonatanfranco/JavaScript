@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
-    <script src="calculadora.js"></script>
+    <title>calculadora</title>
 </head>
 <body>
     <div class="calculator">
-        <div class="display"></div>
-        <div class="calculador-buttons">
-            <button id="limpadorDisplay">CE</button>
+        <div class="display" id="display"></div>
+        <div class="calculator-buttons">
+            <button id="limparDisplay">CE</button>
             <button id="limparCalculo">C</button>
-            <button id="backspace">apaga</button>
+            <button id="backspace">«</button>
             <button id="operadorDividir">/</button>
             <button id="tecla7">7</button>
             <button id="tecla8">8</button>
@@ -28,11 +26,12 @@
             <button id="tecla2">2</button>
             <button id="tecla3">3</button>
             <button id="operadorAdicionar">+</button>
-            <button id="inverter">+X</button>
+            <button id="inverter">±</button>
             <button id="tecla0">0</button>
             <button id="decimal">,</button>
             <button id="igual">=</button>
         </div>
     </div>
+    <script src="calculadora.js"></script>
 </body>
 </html>
