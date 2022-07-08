@@ -1,13 +1,25 @@
-'USE STRICT';
-const display = document.getElementById('display')
-const numeros = document.getElementById('[id*=tecla]') // seletor todos que tem tecla no nome,mas nao ta funcionando.
+'use strict'
 
-const atualizarDisplay = (texto) =>{
-    display.textContent += texto
+
+const display = document.getElementById('display')
+const numeros = document.querySelectorAll('[id*=tecla]')
+const operadores = document.querySelectorAll('[id*=operador]')
+
+
+let novoNumero = true
+let operador
+let numeroAnterior
+
+const operacaoPendente = () => operador !== undefined
+
+
+const calcular = () => {
+
+    if (operacaoPendente()) {
+        const numeroAtual = parseFloat(display.textContent.replace('.','').replace(',', '.'))
+        novoNumero = true
+        const resultado = eval(`${numeroAnterior}${operador}${numeroAtual}`)
+        atualizarDisplay(resultado)  
+    }
 }
 
-const inserirNumero = (evento) => atualizarDisplay(evento.target.textContent)  // nao ta funcionando
-
-numeros.array.forEach(element => {
-    click.numeros = addEventListener('click',inserirNumero)
-});  // nao ta funcionando
